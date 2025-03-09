@@ -28,6 +28,10 @@ function formatDate(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
+  if (minutes < 10) {
+    return `0${minutes}`;
+  }
+
   let days = [
     "Monday",
     "Tuesday",
@@ -58,7 +62,20 @@ function displayWeather(event) {
   searchCity(searchBar.value);
 }
 
+function showForecast() {
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = `<div class="weather-forecast-days">
+    <div class="weather-predictions-day">Mon</div>
+    <div class="weather-predictions-icon">🌞</div>
+    <div class="weather-predictions-temperatures">
+      <div class="weather-predictions-temp">22°</div>
+      <div class="weather-predictions-temp">24°</div>
+    </div>
+  </div>`;
+}
+
 let searchInput = document.querySelector("#search-form");
 searchInput.addEventListener("submit", displayWeather);
 
 searchCity("Nairobi");
+showForecast();
