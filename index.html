@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather predictions</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-bar" id="city-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app">
+          <div>
+            <h1 class="city" id="city">Nairobi</h1>
+            <p class="weather-app-info">
+              <span id="time"></span>, <span id="weather-app-sky"></span>
+              <br />
+              Humidity: <strong id="humidity">48%</strong>, Wind: <strong id="wind">4.63km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+
+            <div class="weather-app-icon" id="weather-app-icon"></div>
+            <div class="weather-app-temp" id="weather-app-temp"></div>
+            <div class="weather-app-unit">°C</div>
+        </div>
+      </main>
+
+       <div class="weather-predictions">
+        <div class="weather-forecast-days">
+                <div class="weather-predictions-day">sun</div>
+                <div class="weather-predictions-icon">🌦️</div>
+                <div class="weather-predictions-temperatures">
+                <div class="weather-predictions-temp">19°</div>
+                <div class="weather-predictions-temp">20°</div>
+        </div>
+      </div>
+      <footer>
+        This code was coded by <a href="#">Ann Kamau</a> is
+        <a href="#">open-sourced on Github</a> and
+        <a href="#">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
