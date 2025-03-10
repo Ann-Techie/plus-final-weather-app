@@ -63,10 +63,10 @@ function displayWeather(event) {
 }
 
 function formatDay(timestamp) {
-  let time = new Date(timestamp * 1000);
+  let date = new Date(timestamp * 1000);
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-  let day = days[time.getDay()];
+  let day = days[date.getDay()];
   return day;
 }
 

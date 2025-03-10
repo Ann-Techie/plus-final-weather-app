@@ -126,6 +126,7 @@ main {
   justify-content: center;
   color: blue;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .weather-predictions-temp {
