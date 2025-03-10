@@ -73,7 +73,7 @@ main {
 .weather-app-info {
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   font-weight: 500;
 }
 .weather-app-info strong {
@@ -109,7 +109,7 @@ main {
 .weather-predictions-day {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -130,6 +130,10 @@ main {
 
 .weather-predictions-temp {
   padding: 0 10px;
+}
+
+.weather-predictions-temp strong {
+  font-weight: 700;
 }
 
 footer {

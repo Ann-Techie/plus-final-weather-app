@@ -93,9 +93,9 @@ function getForecast(response) {
         }" class="weather-predictions-icon"/>
     </div>
     <div class="weather-predictions-temperatures">
-      <div class="weather-predictions-temp">${Math.round(
+      <div class="weather-predictions-temp"><strong>${Math.round(
         day.temperature.maximum
-      )}°</div>
+      )}°</strong></div>
       <div class="weather-predictions-temp">${Math.round(
         day.temperature.minimum
       )}°</div>
