@@ -28,10 +28,13 @@ function formatDate(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
+<<<<<<< HEAD
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
+=======
+>>>>>>> parent of d241e7b (added next 5 days weather forecast)
   let days = [
     "Monday",
     "Tuesday",
@@ -62,6 +65,7 @@ function displayWeather(event) {
   searchCity(searchBar.value);
 }
 
+<<<<<<< HEAD
 function displayForecast(city) {
   let apiKey = "5765tb49aco10f17ace1b436b0213fc4";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
@@ -91,6 +95,8 @@ function getForecast(response) {
   forecast.innerHTML = forecastHtml;
 }
 
+=======
+>>>>>>> parent of d241e7b (added next 5 days weather forecast)
 let searchInput = document.querySelector("#search-form");
 searchInput.addEventListener("submit", displayWeather);
 
